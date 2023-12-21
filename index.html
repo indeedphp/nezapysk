@@ -9,11 +9,13 @@
   <title>Автоэлектрик</title>
   <link href="bootstrap.min.css" rel="stylesheet">
 
+
  <header>
 <body style = "background-color : #282828";>
     <div class="container-fluid  p-2 rounded  mr-3  "  style = "background-color : #18464A";>
        <div class="col-sm d-flex justify-content-center">
         <h4 class=" text-white">Автомобиль не запускается?</h4>
+        <button id="install" >Install</button>
       </div>
   </div>
 
@@ -87,7 +89,7 @@
             <tr><th ><h5 class="text-center">Звуки могут много рассказать</h5></th></tr>
           </thead>
           <tbody>
-           <tr><td>В первую очередь звук бензонасоса из бака при включении зажигания, и при вращении стартером, можно попробовать слушать через заливную горловину бака или под сидением.</td> </tr>
+           <tr><td>В первую очередь звук бензонасоса из бака при включении зажигания, и при вращении стартером, можно попробовать слушать через заливную горловину бака или под задним сидением.</td> </tr>
            <tr><td>Так же звуки могут быть от нештатных сигналок при включении зажигания, отмечаем что где щелкает </td> </tr>
            <tr><td>Слушаем стартер как включается, нет ли таррахтения(севший акб) и слишком быстрого вращения (грм порвался), тишина при включении расскажет об сломанном стартере, блокировках, а четкий щелчок о заклинившем стартере или двигателе.</td> </tr>
          </tbody>
@@ -183,6 +185,21 @@
 
 </footer>
 </div>
+
+  <script type="text/javascript">
+    let installPrompt = null;
+const installButton = document.querySelector("#install");
+
+window.addEventListener("beforeinstallprompt", (event) => {
+  event.preventDefault();
+  installPrompt = event;
+  installButton.removeAttribute("hidden");
+});
+
+  </script>
+
+
+
 </body>
 </html>
 
