@@ -1,105 +1,123 @@
 <!doctype html>
-<html lang="ru">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Автоэлектрики и автомеханики осуществляют выезд по городу Алматы для ремонта, запуска и диагностики вашего автомобиля, приедем быстро сделаем все профессионально.">
-  <meta name="keywords" content="Автоэлектрик, Автоэлектрик Алматы, выезд ремонт автомобиля">
-  <meta name="robots" content="index,follow">
-  <title>Автоэлектрик</title>
-  <link href="bootstrap.min.css" rel="stylesheet">
+  <html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Сайт-приложение для запуска неисправного автомобиля.">
+    <meta name="keywords" content="Самому запустить неисправный авто.">
+    <meta name="robots" content="index,follow">
+    <title>Автостарт</title>
+    <link rel="apple-touch-startup-image" href="img/icon-320x460.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/icon-180x180.png">
+
+    <meta name="theme-color" content="#000000">
+
+    <link rel="manifest" href="manifest.json">
+
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <script>
+window.addEventListener('load', async () => {navigator.serviceWorker.register('sw.js')})
+</script>
+</head>
 
 
- <header>
-<body style = "background-color : #282828";>
-    <div class="container-fluid  p-2 rounded  mr-3  "  style = "background-color : #18464A";>
-       <div class="col-sm d-flex justify-content-center">
-        <h4 class=" text-white">Автомобиль не запускается?</h4>
-        <button id="install" >Install</button>
+      <body style = "background-color : #282828";>
+         <header>
+        <div class="container-fluid  p-2 rounded  mr-3  "  style = "background-color : #18464A";>
+         <div class="col-sm d-flex justify-content-center">
+          <h4 class=" text-white">Автомобиль не запускается?</h4>
+          <!-- <button id="install" >Install</button> -->
+        </div>
       </div>
-  </div>
 
 
-  </header>
+    </header>
 
-  <br>
+    <br>
 
 
-  <main>
-    <h4 class="text-center text-white ">Ниже по тексту будут способы решения проблемы незапуска двигателя автомобиля, с чего начать и куда смотреть при различных проблемах.</h4>
-    <div class="container-fluid py-3">
+    <main>
+      <h4 class="text-center text-white ">Ниже по тексту будут способы решения проблемы незапуска двигателя автомобиля, с чего начать и куда смотреть при различных проблемах.</h4>
+      <div class="container-fluid py-3">
 
-      <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-        <div class="col p-1">
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+          <div class="col p-1">
+            <div class="card mb-4 rounded-3 shadow-sm border-dark ">
+              <div class="card-header py-3 " style = "background-color : #18464A";>
+                <h4 class="my-0 fw-normal text-white ">1.Смотрим на панель приборов!</h4>
+              </div>
+              <div class="p-0 py-3 card-body">
+                <img  src="images/panel-priborov.webp" height="260" class="rounded  mr-3">
+                <table class="table table-striped ">
+                  <thead>
+                    <tr><th ><h5 class="text-center">Включаем зажигание!</h5></th></tr>
+                  </thead>
+                  <tbody>
+
+                   <tr><td>1. Эти значки должны гореть это значит есть питание на зажигании и "мозгах двигателя" и проверяем предохранители если не горят.</td> </tr>
+                   <tr><td>2. Уровень топлива тоже смотрим, всякое бывает :)</td> </tr>
+                   <tr><td>3. Проверяем нейтраль, пробуем выжать тормоз и сцепление если есть, так как на некоторых авто там стоит блокировка от запуска.</td> </tr>
+
+                 </tbody>
+               </table>
+               При запуске на коробке автомат пробуем поставить в нейтраль и запустить или двигать рычагом понемногу и пробовать запускать бывает что в некоторых положениях селектора стартер начинает вращать.
+               На панели внимательно смотрим на все что возможно температура зашкаливает на холодном авто или напряжение высокое (конечно если есть эти индикаторы) и пр. При вращении ключа в замке зажигания тоже можно попытатся поймать положение в котором стартер крутит, часто это чуть назад от крайнего.
+             </div>
+           </div>
+         </div>
+
+         <div class="col p-1">
           <div class="card mb-4 rounded-3 shadow-sm border-dark ">
-            <div class="card-header py-3 " style = "background-color : #18464A";>
-              <h4 class="my-0 fw-normal text-white ">1.Смотрим на панель приборов!</h4>
+            <div class="card-header py-3 " style = "background-color : #18464A"; >
+              <h4 class="my-0 fw-normal text-white">2.Ищем иммобилайзер!</h4>
             </div>
-            <div class="p-0 py-3 card-body">
-              <img  src="images/panel-priborov.webp" height="260" class="rounded  mr-3">
+            <div class="card-body p-0 py-3  ">
+              <img src="images/immo.webp" height="260" class="rounded  mr-3">
               <table class="table table-striped ">
                 <thead>
-                  <tr><th ><h5 class="text-center">Включаем зажигание!</h5></th></tr>
+                  <tr><th ><h5 class="text-center">Он должен потухнуть!</h5></th></tr>
                 </thead>
                 <tbody>
-
-                 <tr><td>1. Эти значки должны гореть это значит есть питание на зажигании и "мозгах двигателя" и проверяем предохранители если не горят.</td> </tr>
-                 <tr><td>2. Уровень топлива тоже смотрим, всякое бывает :)</td> </tr>
-                 <tr><td>3. Проверяем нейтраль, пробуем выжать тормоз и сцепление если есть, так как на некоторых авто там стоит блокировка от запуска.</td> </tr>
-
+                 <tr><td>Смотрим на панель приборов ищем значки с ключиком, так же просто жирную точку или надпись на экранчике "Иммо заблокирован" или что то в таком роде.</td></tr>
+                 <tr><td>Смотрим вокруг, куда его только не засовывают и в водительскую дверь и около замка зажигания и в зеркало и в механические часы на торпедо, погуглите если не найдете.</td> </tr>
+                 <tr><td>Осмотрите ключи зажигания на наличие отверстий в пластике возможно чип иммо выпал(осмотрите коврик в салоне бывает повезет найти), также есть иммо работающие от батарейки поменяйте ее, при манипуляциях с ключами не потеряйте чип.</td> </tr>
                </tbody>
              </table>
-             При запуске на коробке автомат пробуем поставить в нейтраль и запустить или двигать рычагом понемногу и пробовать запускать бывает что в некоторых положениях селектора стартер начинает вращать.
-             На панели внимательно смотрим на все что возможно температура зашкаливает на холодном авто или напряжение высокое (конечно если есть эти индикаторы) и пр. При вращении ключа в замке зажигания тоже можно попытатся поймать положение в котором стартер крутит, часто это чуть назад от крайнего.
+             Обычно лампа иммобилайзера горит или мигает когда он заблокирован, и тухнет когда определился ключ и иимобилайзер разблокироавн. Если есть возможность проверьте накачку антенны иммо.
            </div>
          </div>
        </div>
 
        <div class="col p-1">
         <div class="card mb-4 rounded-3 shadow-sm border-dark ">
-          <div class="card-header py-3 " style = "background-color : #18464A"; >
-            <h4 class="my-0 fw-normal text-white">2.Ищем иммобилайзер!</h4>
+          <div class="card-header py-3  " style = "background-color : #18464A"; >
+            <h4 class="my-0 fw-normal text-white">3.Слушаем авто!</h4>
           </div>
           <div class="card-body p-0 py-3  ">
-            <img src="images/immo.webp" height="260" class="rounded  mr-3">
-            <table class="table table-striped ">
-              <thead>
-                <tr><th ><h5 class="text-center">Он должен потухнуть!</h5></th></tr>
-              </thead>
-              <tbody>
-               <tr><td>Смотрим на панель приборов ищем значки с ключиком, так же просто жирную точку или надпись на экранчике "Иммо заблокирован" или что то в таком роде.</td></tr>
-               <tr><td>Смотрим вокруг, куда его только не засовывают и в водительскую дверь и около замка зажигания и в зеркало и в механические часы на торпедо, погуглите если не найдете.</td> </tr>
-               <tr><td>Осмотрите ключи зажигания на наличие отверстий в пластике возможно чип иммо выпал(осмотрите коврик в салоне бывает повезет найти), также есть иммо работающие от батарейки поменяйте ее, при манипуляциях с ключами не потеряйте чип.</td> </tr>
-             </tbody>
-           </table>
-           Обычно лампа иммобилайзера горит или мигает когда он заблокирован, и тухнет когда определился ключ и иимобилайзер разблокироавн. Если есть возможность проверьте накачку антенны иммо.
-         </div>
+           <img src="images/yxo.webp" height="260" class="rounded  mr-3">
+           <table class="table table-striped ">
+            <thead>
+              <tr><th ><h5 class="text-center">Звуки могут много рассказать</h5></th></tr>
+            </thead>
+            <tbody>
+             <tr><td>В первую очередь звук бензонасоса из бака при включении зажигания, и при вращении стартером, можно попробовать слушать через заливную горловину бака или под задним сидением.</td> </tr>
+             <tr><td>Так же звуки могут быть от нештатных сигналок при включении зажигания, отмечаем что где щелкает </td> </tr>
+             <tr><td>Слушаем стартер как включается, нет ли таррахтения(севший акб) и слишком быстрого вращения (грм порвался), тишина при включении расскажет об сломанном стартере, блокировках, а четкий щелчок о заклинившем стартере или двигателе.</td> </tr>
+           </tbody>
+         </table>
+         Бензонасос на некоторых авто не включается при включении зажигания на авто подкачка может идти от открытия двери (тоета) или от открытия центрального замка, но самое главное что при прокрутке стартером бензонасос должен работать(это говорит об исправности датчика коленвала) и если выключить стартер, бензонасос еще будет пару секунд жужать.
        </div>
      </div>
-
-     <div class="col p-1">
-      <div class="card mb-4 rounded-3 shadow-sm border-dark ">
-        <div class="card-header py-3  " style = "background-color : #18464A"; >
-          <h4 class="my-0 fw-normal text-white">3.Слушаем авто!</h4>
-        </div>
-        <div class="card-body p-0 py-3  ">
-         <img src="images/yxo.webp" height="260" class="rounded  mr-3">
-         <table class="table table-striped ">
-          <thead>
-            <tr><th ><h5 class="text-center">Звуки могут много рассказать</h5></th></tr>
-          </thead>
-          <tbody>
-           <tr><td>В первую очередь звук бензонасоса из бака при включении зажигания, и при вращении стартером, можно попробовать слушать через заливную горловину бака или под задним сидением.</td> </tr>
-           <tr><td>Так же звуки могут быть от нештатных сигналок при включении зажигания, отмечаем что где щелкает </td> </tr>
-           <tr><td>Слушаем стартер как включается, нет ли таррахтения(севший акб) и слишком быстрого вращения (грм порвался), тишина при включении расскажет об сломанном стартере, блокировках, а четкий щелчок о заклинившем стартере или двигателе.</td> </tr>
-         </tbody>
-       </table>
-       Бензонасос на некоторых авто не включается при включении зажигания на авто подкачка может идти от открытия двери (тоета) или от открытия центрального замка, но самое главное что при прокрутке стартером бензонасос должен работать(это говорит об исправности датчика коленвала) и если выключить стартер, бензонасос еще будет пару секунд жужать.
-     </div>
    </div>
- </div>
 
-</div>
+ </div>
 </div>
 
 
@@ -109,23 +127,23 @@
 
     <div class="col p-1">
       <div class="card mb-4 rounded-3 shadow-sm border-dark ">
-        <div class="card-header py-3 "  style = "background-color : #FFD800"; >
-          <h4 class="my-0 fw-normal ">Есть много оборудования</h4>
+        <div class="card-header py-3 "  style = "background-color : #18464A"; >
+          <h4 class="my-0 fw-normal text-white">4.Не крутит стартер!</h4>
         </div>
         <div class="card-body p-0 py-3  ">
-          <img src="vnytri.webp" height="260" class="rounded  mr-3">
+          <img src="images/starter.webp" height="260" class="rounded  mr-3">
           <table class="table table-striped ">
             <thead>
-              <tr><th ><h5 class="text-center">Одна машина - спокойная работа!</h5></th></tr>
+              <tr><th ><h5 class="text-center">Включаем стартер!</h5></th></tr>
             </thead>
             <tbody>
-             <tr><td>У нас нет лишней суеты!</td></tr>
-             <tr><td>Сосредоточенно занимаемся одним авто</td> </tr>
-             <tr><td>Клиент может наблюдать за работой</td></tr>
-             <tr><td>Вокруг много магазинов, есть где погулять</td> </tr>
+             <tr><td>Смотрим включен ли паркинг или нейтраль, жмем тормоз и сцепление если есть там возможно блокировка стартера.</td></tr>
+             <tr><td>Шевелим замок зажигания и пытаемся найти точку где стартер срабатывает, так же шевелим селектор коробки и ставим на нейтраль из парковки для пробы.</td> </tr>
+
+             <tr><td>Смотрим на панель и различные лампочки освещения в салоне если они притухают при включении стартера то значит он получает сигнал на включение и тратит ток.</td> </tr>
            </tbody>
          </table>
-        Многие сервисы стараются набрать много автомобилей и ремонтировать их потихоньку, мы работаем только с одним авто доводя работу до логического конца. Все серьезные вмешательства обсуждаем с клиентом до начала их проведения.
+         При включении стартера слушаем звуки его работы треск значит севший акб или сгоревшая вторая обмотка втягивающего; один мощьный щелчок - заклинивший стартер или двигатель; слишком легкое вращение без нагрузки - неисправный бендикс или срезанные зубья на маховике; тугое вращение стартера - посаженный акб, плохой контакт в силовых проводах, износ втулок стартера; тишина при включении - щеточный узел, проводка, реле, блокировки. Так же могут быть и другие проблемы.
        </div>
      </div>
    </div>
@@ -171,7 +189,7 @@
          <tr><td>Заменим и отремонтируем нужное</td> </tr>
        </tbody>
      </table>
-    Автомобильный кондиционер это сложное устройство, в котором пересекаютя электричество, механика и гидравлика, мы занимаемся не просто простой заправкой но и поиском, а так же устранением различных неисправностей.
+     Автомобильный кондиционер это сложное устройство, в котором пересекаютя электричество, механика и гидравлика, мы занимаемся не просто простой заправкой но и поиском, а так же устранением различных неисправностей.
    </div>
  </div>
 </div>
@@ -186,7 +204,7 @@
 </footer>
 </div>
 
-  <script type="text/javascript">
+<!--   <script type="text/javascript">
     let installPrompt = null;
 const installButton = document.querySelector("#install");
 
@@ -197,7 +215,7 @@ window.addEventListener("beforeinstallprompt", (event) => {
 });
 
   </script>
-
+-->
 
 
 </body>
