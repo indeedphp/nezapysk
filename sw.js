@@ -1,7 +1,7 @@
 
 const staticCache = 'site-static-1';
 const assets = [
-'/',
+
 'index.html',
 'manifest.json',
 'favicon.ico',
