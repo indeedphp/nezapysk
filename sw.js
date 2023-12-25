@@ -1,7 +1,7 @@
 
 const staticCache = 'site-static-1';
 const assets = [
-'',
+'\',
 'img/a.png',
 'img/apple-icon-precomposed.png',
 'img/favicon-16x16.png',
