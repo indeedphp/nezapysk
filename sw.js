@@ -5,8 +5,8 @@ const assets = [
 'index.html',
 'manifest.json',
 'favicon.ico',
-'/img/icon-144x144.png',
-'/img/icon-720x540.png'
+'img/icon-144x144.png',
+'img/icon-720x540.png'
 ];
 
 self.addEventListener('install', evt => {
