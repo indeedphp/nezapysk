@@ -6,7 +6,6 @@ const assets = [
 'index.html',
 'manifest.json',
 'favicon.ico',
-'sw.js',
 'bootstrap.min.css',
 'img/icon-144x144.png',
 'img/icon-720x540.png'
