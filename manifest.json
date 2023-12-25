@@ -109,6 +109,6 @@
   ],
     "name": "AVTOSTART",
     "short_name": "AVTOSTART",
-       "id": "nezapysk/",
-    "start_url": "nezapysk/"
+       "id": ".",
+    "start_url": "."
 }
