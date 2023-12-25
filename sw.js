@@ -1,7 +1,7 @@
 
 const staticCache = 'site-static-1';
 const assets = [
-'nezapysk/',
+
 'index.html',
 'manifest.json',
 'favicon.ico',
