@@ -2,11 +2,8 @@
 const staticCache = 'site-static-1';
 const assets = [
 
-'index.html',
-'manifest.json',
-'favicon.ico',
-'img/icon-144x144.png',
-'img/icon-720x540.png'
+'index.html'
+
 ];
 
 self.addEventListener('install', evt => {
