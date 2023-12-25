@@ -109,6 +109,6 @@
   ],
     "name": "AVTOSTART",
     "short_name": "AVTOSTART",
-       "id": "https://indeedphp.github.io/nezapysk/",
-    "start_url": "https://indeedphp.github.io/nezapysk/"
+       "id": "nezapysk/",
+    "start_url": "nezapysk/"
 }
