@@ -1,14 +1,42 @@
 
 const staticCache = 'site-static-1';
 const assets = [
-'img/',
-'images/',
+'img/a.png',
+'img/apple-icon-precomposed.png',
+'img/favicon-16x16.png',
+'img/favicon-32x32.png',
+'img/favicon-96x96.png',
+'img/favicon.ico',
+'img/icon-114x114.png',
+'img/icon-120x120.png',
+'img/icon-144x144.png',
+'img/icon-152x152.png',
+'img/icon-16x16.png',
+'img/icon-180x180.png',
+'img/icon-192x192.png',
+'img/icon-256x256.png',
+'img/icon-320x460.png',
+'img/icon-36x36.png',
+'img/icon-384x384.png',
+'img/icon-48x48.png',
+'img/icon-512x512.png',
+'img/icon-540x720.png',
+'img/icon-57x57.png',
+'img/icon-60x60.png',
+'img/icon-720x540.png',
+'img/icon-72x72.png',
+'img/icon-76x76.png',
+'img/icon-96x96.png',
+'images/akb.webp',
+'images/immo.webp',
+'images/kapot.webp',
+'images/panel-priborov.webp',
+'images/starter.webp',
+'images/yxo.webp',
 'index.html',
 'manifest.json',
 'favicon.ico',
-'bootstrap.min.css',
-'img/icon-144x144.png',
-'img/icon-720x540.png'
+'bootstrap.min.css'
 ];
 
 self.addEventListener('install', evt => {
