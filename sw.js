@@ -1,5 +1,5 @@
 
-const staticCache = 'site-static-13';
+const staticCache = 'site-static-14';
 const assets = [
 '.',
 'img/a.png',
@@ -73,23 +73,23 @@ self.addEventListener('activate', (event) => {
 });
 
 
-// self.addEventListener('fetch', event => {
-//   console.log('fetch', event.request.url)
-//   event.respondWith(cacheFirst(event.request))
-// })
+self.addEventListener('fetch', event => {
+  console.log('fetch', event.request.url)
+  event.respondWith(cacheFirst(event.request))
+})
 
-// async function cacheFirst(request){
+async function cacheFirst(request){
 
-// const cached = await caches.match(request)
-// return cached ?? await fetch (request)
-// }
+const cached = await caches.match(request)
+return cached ?? await fetch (request)
+}
 
 
-self.addEventListener('fetch', evt => {
-    console.log('SW is fetching data');
-    evt.respondWith(
-        caches.match(evt.request).then(cacheRes => {
-            return cacheRes || fetch(evt.request)  // if item is in cache use it, if isn't go to the server and fetch it
-        })
-    )
-});
+// self.addEventListener('fetch', evt => {
+//     console.log('SW is fetching data');
+//     evt.respondWith(
+//         caches.match(evt.request).then(cacheRes => {
+//             return cacheRes || fetch(evt.request)  // if item is in cache use it, if isn't go to the server and fetch it
+//         })
+//     )
+// });
