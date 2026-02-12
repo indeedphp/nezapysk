@@ -85,11 +85,11 @@ return cached ?? await fetch (request)
 }
 
 
-// self.addEventListener('fetch', evt => {
-//     console.log('SW is fetching data');
-//     evt.respondWith(
-//         caches.match(evt.request).then(cacheRes => {
-//             return cacheRes || fetch(evt.request)  // if item is in cache use it, if isn't go to the server and fetch it
-//         })
-//     )
-// });
+ self.addEventListener('fetch', evt => {
+     console.log('SW is fetching data');
+     evt.respondWith(
+         caches.match(evt.request).then(cacheRes => {
+             return cacheRes || fetch(evt.request)  // if item is in cache use it, if isn't go to the server and fetch it
+         })
+     )
+ });
