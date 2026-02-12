@@ -84,12 +84,12 @@ const cached = await caches.match(request)
 return cached ?? await fetch (request)
 }
 
-
- self.addEventListener('fetch', evt => {
-     console.log('SW is fetching data');
-     evt.respondWith(
-         caches.match(evt.request).then(cacheRes => {
-             return cacheRes || fetch(evt.request)  // if item is in cache use it, if isn't go to the server and fetch it
-         })
-     )
- });
+// раскоментить если нужно принудительное обновление
+// self.addEventListener('fetch', evt => {
+//     console.log('SW is fetching data');
+  //   evt.respondWith(
+    //     caches.match(evt.request).then(cacheRes => {
+      //       return cacheRes || fetch(evt.request)  // if item is in cache use it, if isn't go to the server and fetch it
+        // })
+//     )
+// });
