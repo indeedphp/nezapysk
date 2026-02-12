@@ -1,5 +1,5 @@
 
-const staticCache = 'site-static-16';
+const staticCache = 'site-static-17';
 const assets = [
 '.',
 'img/a.png',
